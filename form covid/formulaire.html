@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+    <title>Diagnostic Covid-19</title>
+    
+</head>
+<body>
+    <form name="f1"><div class="header">
+        <div><img src="virus.png" alt="" class="virus"></div>
+        <div>
+        <h1>Diagnostic Covid-19</h1>
+        <p>Formulaire d’autoévaluation des symptômes de la COVID-19.<br>Le présent formulaire ne remplace pas une consultation médicale.<br> Respectez toujoursles consignes que vous donne un professionnel de la santé.</p></div></div>
+        <h2>Informations Personnelles</h2>
+        <p>nom:<input name="txt" type="text"></p>
+        <p>prenom:<input name="txte" type="text"></p>
+        <p>date de naissance:<input type="date" name="d"></p>
+        <p>adresse:<input name="adr" type="text"></p>
+        <p>pays:<input  type="text"></p>
+        <p>numéro de téléphone:<input  name="num"type="number"></p>
+        <p>e-mail:<input name="m" type=""></p>
+        <h2>Maladies chroniques</h2>
+        <p>Avez-vous des maladies chroniques ?</p>
+        <div class="">
+            <input type="checkbox" name="cardiaque" id="c">
+            <label for="cardiaque">Maladie cardiaque</label>
+        </div>
+        <div class="">
+            <input type="checkbox" name="Pulmonaire" id="p">
+            <label for="Pulmonaire">Maladie Pulmonaire</label>
+        </div>
+        <div class="">
+            <input type="checkbox" name="Diabète" id="d">
+            <label for="Diabète">Diabète</label>
+        </div>
+        <div class="">
+            <input type="checkbox" name="Troubles" id="t">
+            <label for="Troubles">Troubles auto-immunitaire</label>
+        </div>
+        <h2>Les symptômes les plus communs</h2>
+        
+        <div class="">
+            <p>Est-ce que votre température corporelle a dépassée 38° ?</p>
+            <div class="">
+                <input type="radio" name="temp" id="1"><label>oui</label>
+            </div>
+            <div class="">
+                <input type="radio" name="temp" ><label>non</label>
+            </div>
+        </div>
+        
+        <div class="">
+            <p>Est-ce que vous vous sentez plus ou moins fatigué récemment ?</p>
+            <div class="oui">
+                <input type="radio" name="fatigué" id="2"><label>oui</label>
+            </div>
+            <div class="">
+                <input type="radio" name="fatigué" ><label>non</label>
+            </div>
+        </div>
+        
+        <div class="">
+            <p>Avez-vous de la toux ? Quelle sorte ?</p>
+            <div class="">
+                <input type="radio" name="toux" id="3"><label>toux sèche</label>
+            </div>
+            <div class="">
+                <input type="radio" name="toux" id="4"><label>toux régulière</label>
+            </div>
+            <div class="">
+                <input type="radio" name="toux" ><label>non</label>
+            </div>
+        </div>
+        <h2>Les symptômes Sévères</h2>
+        
+        <div class="">
+            <p>Avez-vous eu des difficultés à respirer ou un essoufflement ?</p>
+            <div class="">
+                <input type="radio" name="respirer" id="5"><label>oui</label>
+            </div>
+            <div class="">
+                <input type="radio" name="respirer" ><label>non</label>
+            </div>
+        </div>
+        
+        <div class="">
+            <p>Avez-vous eu des douleurs ou pressions thoraciques ?</p>
+            <div class="">
+                <input type="radio" name="pressions" id="6"><label>oui</label>
+            </div> 
+            <div class=""> 
+                <input type="radio" name="pressions"><label>non</label>
+            </div>
+        </div>
+        
+        <div class="">
+            <p>Avez-vous eu une perte de la parole ou du mouvement ?</p>
+            <div class="">
+                <input type="radio" name="parole" id="7"><label>oui</label>
+            </div>
+            <div class="">
+                <input type="radio" name="parole"><label>non</label>
+            </div>
+        </div>
+        <h2>Les symptômes moins communs</h2>
+        
+        <div class="">
+            <p>Avez-vous eu une perte du goût de l’odorat ?</p>
+            <div class="">
+                <input type="radio" name="goût" id="8"><label>oui</label>
+            </div>
+            <div class="">
+                <input type="radio" name="goût" ><label>non</label>
+            </div>
+        </div>
+        
+        <div class="">
+            <p>Avez-vous des maux de gorge ?</p>
+            <div class="">
+                <input type="radio" name="gorge" id="9"><label>oui</label>
+            </div>
+            <div class="">
+                <input type="radio" name="gorge"><label>non</label>
+            </div>
+        </div>
+        
+        <div class="">
+            <p>Avez-vous des maux de tête ?</p>
+            <div class="">
+                <input type="radio" name="maux" id="10"><label>oui</label>
+            </div>
+            <div class="">
+                <input type="radio" name="maux" ><label>non</label>
+            </div>
+        </div><br>
+        <button onclick="verif()">envoyer</button>
+    </form>
+<script src="formulaire.js"></script>
+    
+</body>
+</html>

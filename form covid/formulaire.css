@@ -1,0 +1,11 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 30px;
+}
+.header{
+    display: flex;
+}
+.virus{
+    height: 150px;
+    width: 150px;
+}
